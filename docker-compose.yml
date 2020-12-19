@@ -1,0 +1,25 @@
+version: '3'
+services:
+
+  backend:
+    image: openjdk
+    container_name: api
+    volumes:
+     - ./backend/demo:/backend/
+    ports:
+     - "8888:8888"
+    build: 
+      context: ./backend/demo
+      dockerfile: Dockerfile
+  
+  frontend:
+    image: node:lts
+    container_name: client
+    build: 
+      context: ./frontend/demo
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend/demo:/frontend/
+      - '.frontend/demo/app/node_modules'
+    ports: 
+     - "4200:4200"

@@ -1,0 +1,55 @@
+{ 
+    "title": "Pessoa",
+    "entity": "pessoa",
+    "api": {
+      "url": "http://localhost:8888/pessoas"
+    },
+    "filter": [
+      "nome"
+    ],
+    "fields": [
+      {
+        "name": "id",
+        "label": "Id",
+        "isId": true,
+        "readonly": true,
+        "type": "number"
+      },
+      {
+        "name": "nome",
+        "type": "string",
+        "label": "Nome"
+      },
+      {
+        "name": "sexo",
+        "type": "string",
+        "label": "Sexo"
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "label": "Email"
+      },
+      {
+        "name": "dataNascimento",
+        "type": "date",
+        "label": "Data de Nascimento"
+      },
+      {
+        "name": "naturalidade",
+        "type": "string",
+        "label": "Naturalidade"
+      },
+      {
+        "name": "nacionalidade",
+        "type": "string",
+        "label": "Nacionalidade"
+      },
+      {
+        "name": "cpf",
+        "type": "string",
+        "control": "number",
+        "label": "CPF"
+      } 
+    ]
+}

@@ -1,0 +1,58 @@
+<ol class="breadcrumb float-right">
+  <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+  <li class="breadcrumb-item active">Pessoa</li>
+</ol>
+<div class="card">
+  <div class="header">
+    <h2 class="title">Lista de Pessoas</h2>
+  </div>
+  <div class="content">
+    <form #f="ngForm">
+      
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input [(ngModel)]="filter.nome" id="nome" name="nome" class="form-control">
+      </div>
+      
+      <button (click)="search()" [disabled]="!f?.valid" class="btn btn-primary">Pesquisar</button>
+      <a [routerLink]="['../pessoas', 'new' ]" class="btn btn-default">Adicionar</a>
+    </form>
+  </div>
+</div>
+<div class="card" *ngIf="pessoaList.length > 0">
+  <div *ngIf="feedback" class="alert alert-{{feedback.type}}">{{ feedback.message }}</div>
+  <div class="table-responsive">
+    <table class="table table-centered table-hover mb-0" id="datatable">
+      <thead>
+        <tr>
+          <th class="border-top-0" scope="col">Id</th>
+          <th class="border-top-0" scope="col">Nome</th>
+          <th class="border-top-0" scope="col">Sexo</th>
+          <th class="border-top-0" scope="col">Email</th>
+          <th class="border-top-0" scope="col">Data de Nascimento</th>
+          <th class="border-top-0" scope="col">Naturalidade</th>
+          <th class="border-top-0" scope="col">Nacionalidade</th>
+          <th class="border-top-0" scope="col">CPF</th>
+          <th class="border-top-0" scope="col" style="width:120px"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of pessoaList" [class.active]="item === selectedPessoa">
+        
+          <td>{{item.id}}</td>
+          <td>{{item.nome}}</td>
+          <td>{{item.sexo}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.dataNascimento}}</td>
+          <td>{{item.naturalidade}}</td>
+          <td>{{item.nacionalidade}}</td>
+          <td>{{item.cpf}}</td>
+          <td style="white-space: nowrap">
+            <a [routerLink]="['../pessoas', item.id ]" class="btn btn-secondary">Editar</a>&nbsp;
+            <button (click)="delete(item)" class="btn btn-danger">Remover</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
