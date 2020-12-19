@@ -26,6 +26,8 @@ No diretório raiz do projeto, rodar:
 * DELETE: /pessoas/{id}
 * DELETE ALL: /pessoas/deleteAll
 
+* SOURCE: /source
+
 ## Documentacao Swagger disponivel em:
 http://localhost:8888/swagger-ui.html
 
