@@ -1,6 +1,7 @@
 frontend/demo/node_modules
 frontend/demo/*.log
 
-backend/demo/.idea
-backend/demo/.mvn
+backend/demo/*.idea
+backend/demo/*.mvn
+*.xml
 
