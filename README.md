@@ -4,12 +4,12 @@
 git clone https://github.com/sartorileonardo/cadastro-pessoa.git
 
 ## Executar somente backend (Java 8 + Spring Boot)
-No diretório backend rodar:
+No diretório backend/demo rodar:
 1. docker build -t api .
 2. docker run -p 8888:8888 api
 
 ## Executar somente frontend (Angular)
-No diretório backend rodar:
+No diretório frontend/demo rodar:
 1. docker build -t client . 
 2. docker run -p 4200:4200 client
 
