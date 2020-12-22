@@ -1,6 +1,6 @@
 *.java linguist-detectable=true
 *.js linguist-detectable=false
-*.ts linguist-detectable=false
+*.ts linguist-detectable=true
 *.css linguist-detectable=false
 *.scss linguist-detectable=false
 *.html linguist-detectable=false
