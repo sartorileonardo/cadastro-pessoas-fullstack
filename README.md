@@ -28,8 +28,10 @@ No diretório raiz do projeto, rodar:
 
 * SOURCE: /source
 
+## Testes
+Executar a classe PessoaControllerTest no modo teste da IDE.
+![Testes](https://user-images.githubusercontent.com/7613528/102938629-6fb1d380-448b-11eb-869c-5bdf16f3ab02.png)
+
 ## Documentacao Swagger disponivel em:
 http://localhost:8888/swagger-ui.html
-
-
-# cadastro-pessoas-fullstack
+![DocumentacaoSwagger](https://user-images.githubusercontent.com/7613528/102938861-df27c300-448b-11eb-8aaa-e37545903514.png)
