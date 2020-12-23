@@ -86,12 +86,17 @@ public class Utils {
 
     public static String getNameGenerated(){
         List<String> names = Arrays.asList("Joao da Silva", "Maria dos Santos", "Jose Farias", "Pedro Alves", "Mariana Ferreira", "Jessica Rodrigues", "Leonardo Pereira", "Juca Lima", "Mario Gomes", "Alessandro Martins");
-        Integer position = getRandomIntegerNumber(10);
+        Integer position = getRandomIntegerNumber(names.size());
         return names.get(position);
     }
 
-    public static String getSexoGenerate() {
+    public static String getSexoGenerated() {
         List<String> opcoesSexo = Arrays.asList("M", "F", "O");
-        return opcoesSexo.get(getRandomIntegerNumber(3));
+        return opcoesSexo.get(getRandomIntegerNumber(opcoesSexo.size()));
+    }
+
+    public static String getCidadeGenerated() {
+        List<String> cidades = Arrays.asList("Florianopolis", "Porto Alegre", "Curitiba", "Sao Paulo", "Rio de Janeiro", "Manaus", "Belo Horizonte", "Votoria");
+        return cidades.get(getRandomIntegerNumber(cidades.size()));
     }
 }

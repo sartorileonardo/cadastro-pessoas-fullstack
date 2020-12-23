@@ -33,9 +33,9 @@ public class DemoApplication {
 
 						p.setNome(name);
 						p.setEmail(name.toLowerCase().replace(" ", "_") + "@gmail.com");
-						p.setSexo(Utils.getSexoGenerate());
+						p.setSexo(Utils.getSexoGenerated());
 						p.setDataNascimento(Date.valueOf(LocalDate.now()));
-						p.setNaturalidade("Florianopolis");
+						p.setNaturalidade(Utils.getCidadeGenerated());
 						p.setNacionalidade("Brasileiro");
 						try {
 							p.setCpf(Utils.geraCPF());
