@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c72a4e2c-d358-47bf-8158-423f29b450a1" name="Default Changelist" comment="" />
+    <list default="true" id="c72a4e2c-d358-47bf-8158-423f29b450a1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../frontend/demo/src/app/pessoa/pessoa-list/pessoa-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/demo/src/app/pessoa/pessoa-list/pessoa-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/demo/src/app/pessoa/pessoa.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/demo/src/app/pessoa/pessoa.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

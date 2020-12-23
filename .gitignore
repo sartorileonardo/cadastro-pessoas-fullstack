@@ -3,5 +3,6 @@ frontend/demo/*.log
 
 backend/demo/*.idea
 backend/demo/*.mvn
+backend/demo/.idea/workspace.xml
 *.xml
 
