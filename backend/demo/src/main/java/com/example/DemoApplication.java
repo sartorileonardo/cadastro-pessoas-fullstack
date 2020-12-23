@@ -34,7 +34,7 @@ public class DemoApplication {
 						p.setNome(name);
 						p.setEmail(name.toLowerCase().replace(" ", "_") + "@gmail.com");
 						p.setSexo(Utils.getSexoGenerated());
-						p.setDataNascimento(Date.valueOf(LocalDate.now()));
+						p.setDataNascimento(LocalDate.now().toString());
 						p.setNaturalidade(Utils.getCidadeGenerated());
 						p.setNacionalidade("Brasileiro");
 						try {

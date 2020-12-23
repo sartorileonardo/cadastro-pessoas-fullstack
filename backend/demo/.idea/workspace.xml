@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c72a4e2c-d358-47bf-8158-423f29b450a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../frontend/demo/src/app/pessoa/pessoa-list/pessoa-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/demo/src/app/pessoa/pessoa-list/pessoa-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../frontend/demo/src/app/pessoa/pessoa.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/demo/src/app/pessoa/pessoa.ts" afterDir="false" />
-    </list>
+    <list default="true" id="c72a4e2c-d358-47bf-8158-423f29b450a1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,6 +151,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="491" y="68" width="374" height="633" key="#com.intellij.ide.util.MemberChooser" timestamp="1608759595625">
+      <screen x="0" y="27" width="1366" height="708" />
+    </state>
+    <state x="491" y="68" width="374" height="633" key="#com.intellij.ide.util.MemberChooser/0.27.1366.708@0.27.1366.708" timestamp="1608759595625" />
     <state x="366" y="117" width="624" height="535" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1608646186084">
       <screen x="0" y="27" width="1366" height="708" />
     </state>

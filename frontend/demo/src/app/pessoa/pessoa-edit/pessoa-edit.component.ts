@@ -34,11 +34,11 @@ export class PessoaEditComponent implements OnInit {
         })
       )
       .subscribe(pessoa => {
-          this.pessoa = pessoa;
-          this.feedback = {};
-        },
+        this.pessoa = pessoa;
+        this.feedback = {};
+      },
         err => {
-          this.feedback = {type: 'warning', message: 'Erro ao carregar a lista de pessoas cadastradas'};
+          this.feedback = { type: 'warning', message: 'Erro ao carregar a lista de pessoas cadastradas' };
         }
       );
   }
@@ -47,13 +47,13 @@ export class PessoaEditComponent implements OnInit {
     this.pessoaService.save(this.pessoa).subscribe(
       pessoa => {
         this.pessoa = pessoa;
-        this.feedback = {type: 'success', message: 'Salvo com sucesso!'};
+        this.feedback = { type: 'success', message: 'Salvo com sucesso!' };
         setTimeout(() => {
           this.router.navigate(['/pessoas']);
         }, 1000);
       },
       err => {
-        this.feedback = {type: 'warning', message: 'Desculpe, ocorreu um erro ao salvar: '+err.message};
+        this.feedback = { type: 'warning', message: 'Desculpe, ocorreu um erro ao salvar: ' + err.message };
       }
     );
   }

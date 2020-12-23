@@ -56,7 +56,7 @@ public class PessoaControllerTest extends AbstractTest {
         p.setCpf(Utils.geraCPF());
         p.setEmail("geovane_ferreira_melo@gmail.com");
         p.setSexo("M");
-        p.setDataNascimento(Date.valueOf(LocalDate.now()));
+        p.setDataNascimento(LocalDate.now().toString());
         p.setNaturalidade("Florianopolis");
         p.setNacionalidade("Brasileiro");
         String inputJson = super.mapToJson(p);
@@ -75,7 +75,7 @@ public class PessoaControllerTest extends AbstractTest {
         p.setCpf("345.128.020-53");
         p.setSexo("F");
         p.setEmail("liandra_borges@gmail.com");
-        p.setDataNascimento(Date.valueOf(LocalDate.now()));
+        p.setDataNascimento(LocalDate.now().toString());
         p.setNacionalidade("Brasileira");
         p.setNaturalidade("Curitiba");
         String inputJson = super.mapToJson(p);

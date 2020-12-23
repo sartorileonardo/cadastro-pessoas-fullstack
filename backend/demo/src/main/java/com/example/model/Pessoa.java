@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -12,6 +14,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import java.sql.Date;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -37,7 +40,8 @@ public class Pessoa {
 
     @ApiModelProperty(value = "Data de nascimento da pessoa")
     @Column(name="data_nascimento")
-    private Date dataNascimento;
+    @DateTimeFormat(pattern = "dd-MM-yyyy")
+    private String dataNascimento;
 
     @ApiModelProperty(value = "Cidade de naturalidade da pessoa")
     private String naturalidade;
@@ -49,10 +53,13 @@ public class Pessoa {
     @CPF(message = "O CPF nao esta valido")
     private String cpf;
 
+    @ApiModelProperty(value = "Data de criacao do cadastro da pessoa")
+    @CreationTimestamp
+    private LocalDateTime dataCriacao;
+
     @ApiModelProperty(value = "Data de alteracao do cadastro da pessoa")
-    @Column(name = "atualizado", nullable = false, updatable = false, insertable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
-    @DateTimeFormat(pattern = "dd/MM/YYYY")
-    public Timestamp atualizado;
+    @UpdateTimestamp
+    private LocalDateTime dataAtualizacao;
 
     public Integer getId() {
         return id;
@@ -86,11 +93,11 @@ public class Pessoa {
         this.email = email;
     }
 
-    public Date getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
@@ -118,11 +125,19 @@ public class Pessoa {
         this.cpf = cpf;
     }
 
-    public Timestamp getAtualizado() {
-        return atualizado;
+    public LocalDateTime getDataCriacao() {
+        return dataCriacao;
     }
 
-    public void setAtualizado(Timestamp atualizado) {
-        this.atualizado = atualizado;
+    public void setDataCriacao(LocalDateTime dataCriacao) {
+        this.dataCriacao = dataCriacao;
+    }
+
+    public LocalDateTime getDataAtualizacao() {
+        return dataAtualizacao;
+    }
+
+    public void setDataAtualizacao(LocalDateTime dataAtualizacao) {
+        this.dataAtualizacao = dataAtualizacao;
     }
 }
