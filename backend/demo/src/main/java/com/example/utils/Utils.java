@@ -96,7 +96,7 @@ public class Utils {
     }
 
     public static String getCidadeGenerated() {
-        List<String> cidades = Arrays.asList("Florianopolis", "Porto Alegre", "Curitiba", "Sao Paulo", "Rio de Janeiro", "Manaus", "Belo Horizonte", "Votoria");
+        List<String> cidades = Arrays.asList("Florianopolis", "Porto Alegre", "Curitiba", "Brasilia", "Sao Paulo", "Rio de Janeiro", "Manaus", "Belo Horizonte", "Vitoria");
         return cidades.get(getRandomIntegerNumber(cidades.size()));
     }
 }
