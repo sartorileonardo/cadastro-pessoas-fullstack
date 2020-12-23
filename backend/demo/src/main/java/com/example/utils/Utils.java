@@ -90,4 +90,8 @@ public class Utils {
         return names.get(position);
     }
 
+    public static String getSexoGenerate() {
+        List<String> opcoesSexo = Arrays.asList("M", "F", "O");
+        return opcoesSexo.get(getRandomIntegerNumber(3));
+    }
 }

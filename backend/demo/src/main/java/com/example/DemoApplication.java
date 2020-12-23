@@ -33,7 +33,7 @@ public class DemoApplication {
 
 						p.setNome(name);
 						p.setEmail(name.toLowerCase().replace(" ", "_") + "@gmail.com");
-						p.setSexo("M");
+						p.setSexo(Utils.getSexoGenerate());
 						p.setDataNascimento(Date.valueOf(LocalDate.now()));
 						p.setNaturalidade("Florianopolis");
 						p.setNacionalidade("Brasileiro");

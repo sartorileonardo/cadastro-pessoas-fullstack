@@ -23,7 +23,11 @@
     
       <div class="form-group">
         <label for="sexo">Sexo</label>
-        <input [(ngModel)]="pessoa.sexo" id="sexo" name="sexo" class="form-control">
+        <select [(ngModel)]="pessoa.sexo" id="sexo" name="sexo" class="form-control">
+          <option value="M">Masculino</option>
+          <option value="F">Feminino</option>
+          <option value="O">Outro</option>
+        </select>
       </div>
     
       <div class="form-group">
