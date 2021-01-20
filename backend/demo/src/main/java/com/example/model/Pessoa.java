@@ -10,7 +10,6 @@ import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
-import java.sql.Date;
 import java.sql.Timestamp;
 
 @AllArgsConstructor
@@ -37,7 +36,7 @@ public class Pessoa {
 
     @ApiModelProperty(value = "Data de nascimento da pessoa")
     @Column(name="data_nascimento")
-    private Date dataNascimento;
+    private String dataNascimento;
 
     @ApiModelProperty(value = "Cidade de naturalidade da pessoa")
     private String naturalidade;
@@ -86,11 +85,11 @@ public class Pessoa {
         this.email = email;
     }
 
-    public Date getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 

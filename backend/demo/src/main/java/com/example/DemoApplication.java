@@ -8,11 +8,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import java.sql.Date;
-import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
 import java.util.stream.LongStream;
 
 @SpringBootApplication
@@ -34,7 +29,7 @@ public class DemoApplication {
 						p.setNome(name);
 						p.setEmail(name.toLowerCase().replace(" ", "_") + "@gmail.com");
 						p.setSexo("M");
-						p.setDataNascimento(Date.valueOf(LocalDate.now()));
+						p.setDataNascimento(Utils.getDataGenerated());
 						p.setNaturalidade("Florianopolis");
 						p.setNacionalidade("Brasileiro");
 						try {
